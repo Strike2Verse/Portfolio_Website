@@ -1,0 +1,222 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Student Portfolio</title>
+        <link rel="stylesheet" href="Profile.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <span>P</span>
+                <span>o</span>
+                <span>r</span>
+                <span class="spacer"></span>
+                <span>t</span>
+                <span>f</span>
+                <span>o</span>
+                <span>l</span>
+                <span>i</span>
+                <span>o</span>
+            </div>
+
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            
+            <nav>
+                <a href="#profile" class="active">Profile</a>
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <!-- Profile Section Below Header -->
+        <section id="profile">
+            <div class="section__pic-container">
+                <img src="Data\Profile_Picture.png" alt="Your profile picture"> 
+            </div>
+            <div class="section__text">
+                <p class="section__text__p1">Hello, I'm</p>
+                <h1 class="title">Xyz Pqr</h1> 
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="window.open('Resume.pdf')">
+                        RESUME
+                    </button>
+                    <button class="btn btn-color-1" onclick="location.href='#contact'">
+                        Contact Info
+                    </button>
+                </div>
+                <div id="socials-container">
+                    <img src="Data\linkedin.png" alt="LinkedIn" class="icon" onclick="location.href='https://linkedin.com/'" aria-label="LinkedIn profile" />
+                    <img src="Data\github.png" alt="Github" class="icon" onclick="location.href='https://github.com/'" aria-label="GitHub profile" />
+
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <div class="about-text">
+                <h2>
+                    <span class="typing-text" id="about-typing"></span>
+                </h2>
+                <p>
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit accusantium sed alias id est, voluptate aliquam earum eos nihil provident nisi, quas laborum voluptates perspiciatis dolores ullam? Architecto, veritatis doloremque?
+                </p>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit quo earum illum tempore itaque saepe praesentium impedit placeat? Alias accusamus autem assumenda nobis culpa iusto debitis dicta nulla impedit cum!
+                </p>
+            </div>
+        
+            <div class="skills-box">
+                <h2>
+                    <span class="typing-text" id="skills-typing"></span>
+                </h2>
+                <div class="skills-category">Programming Language:</div>
+                <div class="skills-list">
+                    <button class="skill-button" aria-label="programming language">*</button>
+                    <button class="skill-button" aria-label="programming language">*</button>
+                    <button class="skill-button" aria-label="programming language">*</button>
+                    <button class="skill-button" aria-label="programming language">*</button>
+                </div>
+        
+                <div class="skills-category">Web Development:</div>
+                <div class="skills-list">
+                    <button class="skill-button" aria-label="web development">*</button>
+                    <button class="skill-button" aria-label="web styling">*</button>
+                    <button class="skill-button" aria-label="interactivity">*</button>
+                </div>
+        
+                <div class="skills-category">Database:</div>
+                <div class="skills-list">
+                    <button class="skill-button" aria-label="database">*</button>
+                    <button class="skill-button" aria-label="database">*</button>
+                </div>
+        
+                <div class="skills-category">Machine Learning and AI:</div>
+                <div class="skills-list">
+                    <button class="skill-button" aria-label="Learning">*</button>
+                    <button class="skill-button" aria-label="Vision">*</button>
+                    <button class="skill-button" aria-label="Learning">*</button>
+                </div>
+            </div>
+        </section> 
+        
+        <section id="education">
+            <div id="education">
+                <h2>Education</h2>
+                <div class="timeline">
+                    <!-- First Event -->
+                    <div class="timeline-item">
+                        <div class="timeline-box">
+                            <h3>Education</h3>
+                            <p>Institute of Management Studies</p>
+                        </div>
+                        <div class="timeline-point"></div>
+                        <button class="timeline-year">2005</button>
+                    </div>
+                    <!-- Second Event -->
+                    <div class="timeline-item">
+                        <button class="timeline-year">2010</button>
+                        <div class="timeline-point"></div>
+                        <div class="timeline-box">
+                            <h3>Education</h3>
+                            <p>Institute of Management Studies</p>
+                        </div>
+                    </div>
+                </div>
+            </div>        
+        </section>
+        
+        <section id="projects">
+            <p class="section__text__p1">Browse My Recent</p>
+            <h1 class="title">Projects</h1>
+            <div class="experience-details-container">
+                <!-- Project 1 -->
+                <div class="details-container">
+                    <div class="image-box">
+                        <img src="Data\Project.jpg" alt="Project One" class="project-img" />
+                    </div>
+                    <h2 class="project-title">Project One</h2>
+                    <div class="btn-container">
+                        <button class="project-btn">Github</button>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="details-container">
+                    <div class="image-box">
+                        <img src="Data\Project.jpg" alt="Project Two" class="project-img" />
+                    </div>
+                    <h2 class="project-title">Project Two</h2>
+                    <div class="btn-container">
+                        <button class="project-btn">Github</button>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="details-container">
+                    <div class="image-box">
+                        <img src="Data\Project.jpg" alt="Project Three" class="project-img" />
+                    </div>
+                    <h2 class="project-title">Project Three</h2>
+                    <div class="btn-container">
+                        <button class="project-btn">Github</button>
+                    </div>
+                </div>
+            </div>
+        </section>   
+        
+        <section id="contact">
+            <p class="section__text__p1">Get in Touch</p>
+            <h1 class="title">Contact Me</h1>
+            <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img
+                src="Data\email.png"
+                alt="Email icon"
+                class="icon contact-icon email-icon"
+                />
+                <p><a href="mailto:examplemail@gmail.com">examplemail@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img
+                src="Data\linkedin.png"
+                alt="LinkedIn icon"
+                class="icon contact-icon"
+                />
+                <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+            </div>
+            </div>
+        </section>   
+        
+        <footer id="footer">
+            <!-- Navigation Menu -->
+            <nav class="footer-nav">
+                <a href="#profile" class="footer-link">Profile</a>
+                <a href="#about" class="footer-link">About</a>
+                <a href="#education" class="footer-link">Education</a>
+                <a href="#projects" class="footer-link">Projects</a>
+            </nav>
+        
+            <!-- Social Media Icons -->
+            <div class="social-icons">
+                <a href="https://github.com" target="_blank" class="social-icon">
+                    <img src="Data\github.png" alt="Github" />
+                </a>
+                <a href="https://linkedin.com" target="_blank" class="social-icon">
+                    <img src="Data\linkedin.png" alt="LinkedIn" />
+                </a>
+                <a href="https://twitter.com" target="_blank" class="social-icon">
+                    <img src="Data\twitter.png" alt="Twitter" />
+                </a>
+            </div>
+        </footer>          
+        
+        <script src="Script.js"></script>  
+    </body>
+    </html>
